@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		/*
+		* Exercise Two
+		* Why does the following output true?
+		*/
+
+		/* my notes: var a and var b are different types; var a is a string with the value "false" and var b is a boolean with the value true; since everything with a 'real' value is true, var a and var b are both true; therefore true and true is true
+		*/
+
+		var a = "false";
+		var b = true;
+
+		// "&&" is "and"
+		console.log (a && b); 		//true
+		console.log (b && a);		//false
+		console.log (b);			//true
+		console.log(typeof(b));		//boolean
+		console.log (a);			//false
+		console.log (typeof(a));	//string
+		
+
+		/*
+		* Bonus Question: Why does (b && a) log "false"?
+		*/
+
+		//it returns the value of var a, which is a string object 'false', but that is not a boolean
+
+	</script>
+</body>
+</html>
